@@ -40,6 +40,12 @@ export function EvidenceReport({ result, originalText }: { result: ScanResult; o
           </div>
         </div>
 
+        <p className="mt-2 text-xs text-slate-400">
+  The risk assessment considers both the numerical score and the
+  strength and combination of detected indicators. A high-risk
+  verdict can occur even when the score is below 60.
+</p>
+
         <ul className="mt-4 space-y-1.5">
           {result.rationale.map((r, i) => (
             <li key={i} className="flex gap-2 text-sm text-slate-300">
